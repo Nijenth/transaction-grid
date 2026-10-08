@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaction Data Grid</title>
+    <link rel="stylesheet" href="./transactionStyles.css">
+    <style>
+        /* Additional page styling */
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header {
+            margin-bottom: 2rem;
+            text-align: center;
+            width: 100%;
+            max-width: 1000px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2rem;
+            color: #0f172a;
+        }
+        .header p {
+            color: #64748b;
+        }
+        #app {
+            width: 100%;
+            max-width: 1000px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Recent Transactions</h1>
+        <p>Manage and track your latest financial activity</p>
+    </div>
+    
+    <div id="app"></div>
+
+    <script type="module">
+        import { TransactionDataTable } from './TransactionDataTable.js';
+        
+        document.addEventListener('DOMContentLoaded', () => {
+            const mountPoint = document.getElementById('app');
+            new TransactionDataTable(mountPoint);
+        });
+    </script>
+</body>
+</html>

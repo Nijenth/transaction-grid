@@ -1,0 +1,11 @@
+{
+  "status": "success",
+  "data": [
+    { "id": "txn_123", "amount": 250.50, "currency": "USD", "status": "completed", "date": "2026-10-08T10:00:00Z" },
+    { "id": "txn_124", "amount": 15.00, "currency": "USD", "status": "pending", "date": "2026-10-08T11:30:00Z" },
+    { "id": "txn_125", "amount": 1200.00, "currency": "EUR", "status": "failed", "date": "2026-10-07T09:15:00Z" },
+    { "id": "txn_126", "amount": 45.99, "currency": "GBP", "status": "completed", "date": "2026-10-06T14:20:00Z" },
+    { "id": "txn_127", "amount": 890.00, "currency": "USD", "status": "completed", "date": "2026-10-05T08:00:00Z" },
+    { "id": "txn_128", "amount": 310.20, "currency": "USD", "status": "completed", "date": "2026-10-04T12:00:00Z" }
+  ]
+}
